@@ -15,11 +15,17 @@ class PageController extends AbstractController
 	#[Route('/', name: 'home')]
 	public function index(): Response
 	{
-		//return new Response("This is the index page");
-
 		return $this->render('pages/home.html.twig', [
 			'title' => 'Home Page',
 		]);
 	}
+
+	#[Route('/item', name: 'item')]
+    public function item(): Response
+    {
+        return $this->render('pages/item.html.twig', [
+            'title' => 'Item Page',
+        ]);
+    }
 
 }
