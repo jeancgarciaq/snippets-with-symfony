@@ -6,6 +6,15 @@
 
 {% block body %}
 
+{% block aside %}
+	<div class="flex fixed top-0 bottom-0 left-0 w-[250px] bg-gray-800 flex-col z-40">
+	    <div class="p-4 text-white font-bold">Barra</div>
+	    <ul class="flex-1 p-4 space-y-2">
+	        <li><a href="{{ path('home') }}" class="flex items-center p-2 rounded hover:bg-gray-700" >Home</a></li>
+	        <li><a href="{{ path('item') }}" class="flex items-center p-2 rounded hover:bg-gray-700">Item</a></li>
+	    </ul>
+	</div>
+{% endblock %}
 	<div class="space-y-8">
     	<div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-4 flex flex-col lg:flex-row lg:justify-between">
         	<div class="flex gap-4 mb-4 lg:mb-0">
