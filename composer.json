@@ -13,6 +13,7 @@
         "symfony/framework-bundle": "7.3.*",
         "symfony/monolog-bundle": "^3.0",
         "symfony/runtime": "7.3.*",
+        "symfony/security-bundle": "7.3.*",
         "symfony/stimulus-bundle": "^2.29",
         "symfony/twig-bundle": "7.3.*",
         "symfony/ux-turbo": "^2.29",
@@ -73,6 +74,7 @@
     },
     "require-dev": {
         "symfony/debug-bundle": "7.3.*",
+        "symfony/maker-bundle": "^1.64",
         "symfony/stopwatch": "7.3.*",
         "symfony/web-profiler-bundle": "7.3.*"
     }
