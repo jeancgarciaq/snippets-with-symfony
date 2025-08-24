@@ -32,9 +32,9 @@ final class CommentFactory extends PersistentProxyObjectFactory
     protected function defaults(): array|callable
     {
         return [
-            'author' => UserFactory::new(),
+            'author' => UserFactory::random(),
             'content' => self::faker()->text(),
-            'snippet' => SnippetFactory::new(),
+            'snippet' => SnippetFactory::random(),
         ];
     }
 
