@@ -32,10 +32,10 @@ final class SnippetFactory extends PersistentProxyObjectFactory
     protected function defaults(): array|callable
     {
         return [
-            'author' => UserFactory::new(),
+            'author' => UserFactory::random(),
             'code' => self::faker()->text(),
             'description' => self::faker()->text(),
-            'title' => self::faker()->text(255),
+            'title' => self::faker()->sentence(),
         ];
     }
 
