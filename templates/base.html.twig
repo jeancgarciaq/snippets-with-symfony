@@ -13,6 +13,9 @@
         {% endblock %}
     </head>
     <body class="text-white bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen">
+        <aside>
+            {% block aside %}{% endblock %}
+        </aside>
         <div class="max-w-5xl mx-auto px-4 py-8">
         {% block body %}{% endblock %}
         </div>
